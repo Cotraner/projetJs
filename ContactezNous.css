@@ -1,0 +1,64 @@
+
+
+form {
+    align-items: center;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: 2px solid #2B2A4C;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 4em ;
+
+    border-radius: 1em;
+
+    width: 52%;
+    min-width: 220px;
+}
+
+
+
+label {
+
+display: inline-block;
+width: 200px;
+text-align: center;
+}
+
+input, textarea {
+
+font: 1em 'Kanit';
+
+
+width: 50%;
+min-width: 200px;
+height: 5;
+box-sizing: border-box;
+
+
+border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+border-color: #000;
+}
+
+textarea {
+
+vertical-align: top;
+height: 5em;
+}
+
+h1 , h2{
+text-align: center;
+}
+
+#env{
+    background-color: #757575;
+    font: 1em 'Kanit';
+}
+
+.mandatory_rem {
+    color: red;
+    font-size: 10px;
+}

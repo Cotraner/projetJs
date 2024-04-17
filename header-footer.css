@@ -1,0 +1,232 @@
+html{
+    background-color: #EEE2DE;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+}
+
+#head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em;
+    background-color: #2B2A4C;
+}
+
+#logo{
+    width: 120px;
+    height: auto;
+}
+
+.logo{
+    width: 170px;
+}
+
+.lien{
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+
+button {
+    color: #EEE2DE;
+    text-decoration: none;
+    font-size: 25px;
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+  
+button::before {
+    margin-left: auto;
+}
+  
+button::after, button::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #B31312;
+    display: block;
+    transition: 0.5s;
+}
+  
+button:hover::after, button:hover::before {
+    width: 100%;
+}
+
+.sous{
+    display: none;
+    box-shadow: opx 1px 2px ;
+    background-color: white;
+}
+
+nav > ul li:hover .sous{
+    display: block;
+}
+
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+body, div {
+    margin: 0;
+    padding: 0;
+}
+
+#head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2B2A4C;
+}
+
+.logo {
+    width: 120px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #EEE2DE;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2B2A4C;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#desc{
+    padding: 1em;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 95%;
+    padding-top : 1em;
+    padding-bottom: 1em;
+    background-color: #2B2A4C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+h3{
+    color:#EEE2DE;
+}
+
+p_1 , p_2{
+    color: white;
+    font-size: smaller;
+    
+}
+
+div_Nantes{
+    box-sizing:border-box;
+    text-align: center;
+    border-style: double;
+    border-color:#EEE2DE;
+    padding: 1em;
+    border-radius: 25%;
+}
+
+div_Caen{
+    box-sizing:border-box;
+    text-align: center;
+    border-style: double;
+    border-color: #EEE2DE;
+    padding: 1em;
+    border-radius: 25%;
+}
+
+div_Rennes{
+    box-sizing:border-box;
+    text-align: center;
+    border-style: double;
+    border-color:#EEE2DE;
+    padding: 1em;
+    border-radius: 25%;
+}
+
+div_Brest{
+    box-sizing:border-box;
+    text-align: center;
+    border-style: double;
+    border-color:#EEE2DE;
+    padding: 1em;
+    border-radius: 25%;
+}
+
+div_Dev{
+    box-sizing:border-box;
+    text-align: center;
+    border-style: double;
+    border-color:#EEE2DE;
+    padding: 1em;
+    border-radius: 25%;
+}
+
+.sous_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.lien_linkedin_Clem{
+    width: 20px;
+    height: 20px;
+}
+
+.lien_linkedin_Am{
+    width: 20px;
+    height: 20px;
+}
+
+p_3{
+    font-size: 15px;
+    color: #EEE2DE;
+}
+
+#barre_vert{
+    border-style:  none solid none none;
+    border-color: rgb(31, 30, 30);
+    padding: 0.3em;
+    border-color: #EEE2DE;
+}
+
+a:visited{
+    color: rgb(128, 85, 59);
+}
+
+a:hover{
+    color: rgb(69, 68, 52);
+}
+
+

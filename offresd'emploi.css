@@ -1,0 +1,17 @@
+ul {list-style-type: disc;}
+
+h2{
+    text-align: right;
+    margin-right: 2.7em;
+
+}
+
+#marge{
+    margin: 1em;
+    text-align: justify;
+}
+
+.icon_pdf{
+    width: 15px;
+    height: 15px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+<link href="header-footer.css" rel="stylesheet">
+<link href="ContactezNous.css" rel="stylesheet">
+<meta charset="utf-8">
+<title> Lab'ISEN </title>
+ </head>
+
+ <body>
+ <nav>
+ <div id="head">
+   <div class="logo"><img id="logo" src="images/logo.png"> </div>
+   <div class="lien" id="accueil"><a  href="Accueil.html"><button>Accueil</button></a></div>
+   <div class="lien" id="membres"><a  href="Membres.html"><button>Membres</button></a></div>
+   <div class="lien" id="projets"><a  href="Projets.html"><button>Projets</button></a></div>
+   <div class="lien" id="publications"><a  href="Publications.html"><button>Publications</button></a></div>
+   <div class="lien" id="partenaires"><a  href="Partenaires.html"><button>Partenaires</button></a></div>
+   <div class="menu-item dropdown" id="info"><a href="#"><button>Infos & Contacts</button></a>
+      <div class="dropdown-content">
+         <div><a href="ContactezNous.html"><button>Contactez-nous</button></a></div>
+         <div><a href="pland'acces.html"><button>Plan d'accès</button></a></div>
+         <div><a href="offred'emploi.html"><button>Offres d'emploi</button></a></div>
+      </div>
+   </div>
+   <div class="menu-item dropdown" id="info"><a href="#"><button>Recherche</button></a>
+      <div class="dropdown-content">
+         <div><a href="ThematiqueRecherche.html"><button>Thématique de recherche</button></a></div>
+         <div><a href="PlateformTech.html"><button>Plateformes technologiques</button></a></div>
+      </div>
+   </div>
+ </div>
+</nav>
+
+
+   <main>
+       <br>
+       <br>            <br>
+       <br>
+       <h1><b>Contactez le responsable de l'équipe</b></h1>
+       <h2><b>(Maher Jridi - maher.jridi[at]isen-ouest.yncrea.fr)</b></h2>
+       <form id="FomulaireContact" action="contactez_nous.html" method="post">
+           <input type="text" name="prenom_nom" placeholder="Prénom Nom:" >
+           <br><div name="mand_nom" class="mandatory_rem">*Entrez votre prénom et votre nom</div>
+           <br>
+           <input type="email" name="email" placeholder="Email@example.com">
+           <br><div name="mand_email" class="mandatory_rem">*Entrez une adresse mail valide</div>
+           <br>
+           <textarea name="zone_texte" placeholder="Votre message (1000 caractères maximum)"cols="30" rows="10" maxlength="1000" oninput="verif_champ()"></textarea>
+           <br>
+           <div name="mand_car" class="mandatory_rem">*Entrez entre 20 et 1000 caractères</div>
+           <button id="env" type="submit" disabled>Envoyer</button>
+       </form>
+   </main>
+
+   <footer>
+      <div_Nantes>
+          <h3>Nantes</h3>
+          <p_1><a href="tel:+33 02 30 13 05 60" class="num">02 30 13 05 60</a></p_1><br>
+          <p_2>33 Quater Avenue du<br>Champ de Manœuvres</p_2>
+      </div_Nantes>
+   
+      <div_Caen>
+          <h3>Caen</h3>
+          <p_1><a href="tel:+33 02 30 31 03 20" class="num">02 30 31 03 20</a></p_1><br>
+          <p_2>8 Boulevard Croix Guérin</p_2>
+      </div_Caen>
+   
+      <div_Brest>
+          <h3>Brest</h3>
+          <p_1><a href="tel:+33 02 98 03 84 00"  class="num">02 98 03 84 00</a></p_1><br>
+          <p_2>20 rue Cuirassé Bretagne</p_2>
+      </div_Brest>
+   
+      <div_Rennes>
+          <h3>Rennes</h3>
+          <p_1><a href="tel:+33 02 30 13 02 50"  class="num">02 30 13 02 50</a></p_1><br>
+          <p_2>2 rue de la Châtaigneraie</p_2>
+      </div_Rennes>
+   
+      <div_Dev>
+          <h3>Développeurs</h3>
+          <span id="sous_flex">
+              <a href="https://www.linkedin.com/in/cl%C3%A9ment-robin-5b4ba6261/" target="_blank"><img class="lien_linkedin_Clem" src="images/linkedin.svg"></a>
+              <p_3 id="barre_vert">Clément R.</p_3>
+          </span>
+          
+          <span id="sous_flex">
+              <img class="lien_linkedin_Am" src="images/linkedin.svg"></a>
+              <p_3>Louis M.</p_3>
+          </span>
+      </div>
+   </footer>
+ </body>
+</html>

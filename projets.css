@@ -1,0 +1,43 @@
+.decalage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1em;
+    text-align: justify;
+}
+img{
+    width: 400px;
+    height: 200px;
+    
+}
+.title{
+    font-size: x-large;
+    text-align: center;
+}
+
+#marge{
+    margin: 1em;
+}
+
+#im1{
+    padding: 1em;
+}
+#im2{
+    padding: 1em;
+
+}
+
+#im3{
+    padding: 1em;
+    width: 215px;
+    height: 215px;
+}
+
+#im4{
+    padding: 1em;
+}
+
+
+
+
+
