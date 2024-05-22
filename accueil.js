@@ -1,34 +1,35 @@
-function main(){
-    afficheLettre();
-    zoom();
+let heading = document.getElementById("desc");
+let text = heading.textContent;
+heading.textContent = "";
 
-}
-main();
-
-function afficheLettre(){
-    let element = document.getElementById('desc');
-    let texte = element.textContent;
-    element.textContent = '';   // on met une chaine vide pour faire apparaitre les lettres
-
-    function afficherLettreParLettre(index) {
-        let span = document.createElement('span');  //créer un element pour chaque lettre
-        span.textContent = texte.charAt(index);
-        element.appendChild(span);
-        setTimeout(function() {
-        afficherLettreParLettre(index + 1); //on recommence au bout de 1sec
-        }, 100);
+function animateHeading() {
+  let currentCharIndex = 0;
+  let interval = setInterval(function() {
+    if (currentCharIndex < text.length) {
+      heading.textContent += text[currentCharIndex];
+      currentCharIndex++;
+    } else {
+      clearInterval(interval);
+      setTimeout(function() {
+        heading.textContent = "";
+        currentCharIndex = 0;
+        animateHeading();
+      }, 1000); // Temps d'attente avant de recommencer l'animation (en millisecondes)
     }
-
-    afficherLettreParLettre(0);
+  }, 75); // Temps d'affichage d'un caractère (en millisecondes)
 }
 
-function zoom(){
+animateHeading();
 
-    let im = document.getElementById('competence');
-    im.addEventListener('mouseover', function() {
-        im.style.width = '85%';
-    });
-    im.addEventListener('mouseleave', function() {
-        im.style.width = '50%';
-    });  
+function scalling(){
+  const element = document.getElementById('competence');
+  
+
+  element.addEventListener('mouseover', () => {
+      element.style.width = '85%';
+      
+  });
+  
 }
+
+scalling();
