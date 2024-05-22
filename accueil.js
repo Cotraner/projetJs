@@ -20,3 +20,16 @@ function animateHeading() {
 }
 
 animateHeading();
+
+function scalling(){
+  const element = document.getElementById('competence');
+  
+
+  element.addEventListener('mouseover', () => {
+      element.style.width = '85%';
+      
+  });
+  
+}
+
+scalling();
