@@ -13,6 +13,25 @@ b{
 li{
     list-style-type: square;
 }
+
 juste_gris{
     color: gray;
 }
+
+input{
+    background-color: #2B2A4C;
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+#filter-form{
+    margin-left: 28em;
+    margin-right: 28em;
+    padding-top: 2em ;
+    padding-bottom: 2em;
+    border-radius: 20px;
+    border: double 2px #2B2A4C;
+}
+
+
