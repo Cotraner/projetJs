@@ -32,7 +32,10 @@
    </div>
  </div>
 </nav>
-
+<div id="wrapper" class="wrapper">
+    <h1>Prenez le contrôle du cube</h1>
+  </div>
+  
 
    <main>
        <br>
@@ -50,10 +53,10 @@
            <textarea name="zone_texte" placeholder="Votre message (1000 caractères maximum)"cols="30" rows="10" maxlength="1000" oninput="verif_champ()"></textarea>
            <br>
            <div name="mand_car" class="mandatory_rem">*Entrez entre 20 et 1000 caractères</div>
-           <button id="env" type="submit" onclick="hideAll()">Envoyer</button>
+           <button id="env" onclick="jeu()">Envoyer</button>
        </form>
    </main>
-   <div class="loading">
+   <div class="loading" onclick="win()">
     <div class="cube" id="cube">
       <div class="side front"></div>
       <div class="side back"></div>
