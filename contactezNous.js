@@ -67,9 +67,19 @@ function verif_champ(){
 function moveCube(){
     const element = document.getElementById('cube');
     let ctrl=false;
+    document.addEventListener('keydown', function(event) {
+        if (event.ctrlKey) {
+            console.log('La touche Ctrl est appuyée :', true);
+            ctrl=true;
+        }
+    });
     if(MouseEvent.ctrlKey!=true){
         element.addEventListener('mouseover', () => {
-            if(ctrl!=true){
+            document.addEventListener('keydown', function(event) {
+                if (event.ctrlKey) {
+                    console.log('La touche Ctrl est appuyée :', true);
+                }
+            });
                 let negativeX = Math.random();
                 let negativeY = Math.random();
                 let x = Math.trunc(Math.random()*1000);
@@ -79,10 +89,8 @@ function moveCube(){
                 while(x<-20 || x>625){x=Math.trunc(Math.random()*1000)};
                 while(y<-650 || y>650){y=Math.trunc(Math.random()*1000)};
                 element.style.bottom = x + 'px';
-                console.log(element.style.bottom);
                 element.style.right = y + 'px';
-                console.log(element.style.right);
-            }
+            
         });
     }
 }
@@ -101,11 +109,7 @@ function ask_phone(number){
     }
 }
 function isCtrlPressed(){
-    document.addEventListener('keydown', function(event) {
-        if (event.ctrlKey) {
-            console.log('La touche Ctrl est appuyée :', true);
-        }
-    });
+    
 }
 
 
