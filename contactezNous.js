@@ -66,17 +66,25 @@ function verif_champ(){
 
 function moveCube(){
     const element = document.getElementById('cube');
-
+    let ctrl=false;
+    if(MouseEvent.ctrlKey!=true){
         element.addEventListener('mouseover', () => {
-            let x = Math.trunc(Math.random()*1000);
-            let y = Math.trunc(Math.random()*1000);
-            // while(x<-20 || x>625){x=Math.trunc(Math.random()*1000)};
-            // while(y<-650 || y>650){x=Math.trunc(Math.random()*1000)};
-            element.style.bottom = x + 'px';
-            console.log(element.style.bottom);
-            element.style.right = y + 'px';
-            console.log(element.style.right);
+            if(ctrl!=true){
+                let negativeX = Math.random();
+                let negativeY = Math.random();
+                let x = Math.trunc(Math.random()*1000);
+                let y = Math.trunc(Math.random()*1000);
+                if(negativeX>0.5){x=x*(-1)};
+                if(negativeY>0.5){y=y*(-1)};
+                while(x<-20 || x>625){x=Math.trunc(Math.random()*1000)};
+                while(y<-650 || y>650){y=Math.trunc(Math.random()*1000)};
+                element.style.bottom = x + 'px';
+                console.log(element.style.bottom);
+                element.style.right = y + 'px';
+                console.log(element.style.right);
+            }
         });
+    }
 }
 
 moveCube();
@@ -92,3 +100,18 @@ function ask_phone(number){
         alert("Les numéros ne correspondent pas ! Appel annulé.");
     }
 }
+function isCtrlPressed(){
+    document.addEventListener('keydown', function(event) {
+        if (event.ctrlKey) {
+            console.log('La touche Ctrl est appuyée :', true);
+        }
+    });
+}
+
+
+console.log(!MouseEvent.ctrlKey);
+
+
+
+moveCube();
+isCtrlPressed();

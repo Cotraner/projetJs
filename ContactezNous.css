@@ -75,7 +75,7 @@ text-align: center;
     height: 100%;
     /* position: relative; */
     transform-style: preserve-3d;
-    animation: rotate 3s infinite linear;
+    animation: rotate 2s infinite linear;
     position: absolute;
     bottom : 0px;
     right: 0px; 
