@@ -111,7 +111,9 @@ function ask_phone(number){
 }
 
 function jeu(){
-    let cube=document.getElementById("cube");
+    let name = document.getElementById("env").value;
+
+    let cube=document.getElementById("cube1");
     cube.style.display="block";
     let text=document.getElementById("wrapper")
     text.style.display="block";
