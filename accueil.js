@@ -21,18 +21,7 @@ function animateHeading() {
 
 animateHeading();
 
-function scalling(){
-  const element = document.getElementById('competence');
-  
 
-  element.addEventListener('mouseover', () => {
-      element.style.width = '85%';
-      
-  });
-  
-}
-
-scalling();
 
 function ask_phone(number){
     let nm_input = prompt(`Si vous voulez appeller le numéro ${number} entrez le de nouveau :`);
