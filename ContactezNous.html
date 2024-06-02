@@ -7,6 +7,7 @@
 <link href="global.css" rel="stylesheet">
 <script src="global.js" defer></script>
 <meta charset="utf-8">
+<link rel = "icon" href ="images/logo.png"type = "image/x-icon">
 <title> Lab'ISEN </title>
  </head>
  <body>
@@ -46,6 +47,7 @@
        <br>
        <h1><b>Contactez le responsable de l'équipe</b></h1>
        <h2><b>(Maher Jridi - maher.jridi[at]isen-ouest.yncrea.fr)</b></h2>
+       <div id="form">
        <form id="FomulaireContact" onchange="valider_envoi()">
            <input type="text" name="prenom_nom" placeholder="Prénom Nom:" oninput="verif_nom()">
            <br><div name="mand_nom" class="mandatory_rem">*Entrez votre prénom et votre nom</div>
@@ -56,9 +58,10 @@
            <textarea name="zone_texte" placeholder="Votre message (1000 caractères maximum)"cols="30" rows="10" maxlength="1000" oninput="verif_champ()"></textarea>
            <br>
            <div name="mand_car" class="mandatory_rem">*Entrez entre 20 et 1000 caractères</div>
-           <button id="env" onclick="jeu()">Envoyer</button>
        </form>
-   </main>
+       <button id="env" onclick="jeu()" disabled>Envoyer</button>
+    </div>
+    </main>
    <div class="loading" id="cube1" onclick="win()">
     <div class="cube" id="cube">
       <div class="side front"></div>
@@ -69,6 +72,13 @@
       <div class="side right"></div>
     </div>
   </div>  
+  <div id="send">
+    <div id="okay">
+        <h2>Votre message a bien été envoyé</h2>
+        <p>Merci de votre participation</p>
+        <button onclick="sent()">Fermer</button>
+    </div>
+</div>
   <footer>
     <div_Nantes>
         <h3>Nantes</h3>

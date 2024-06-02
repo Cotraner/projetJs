@@ -18,6 +18,7 @@ function valider_envoi(){
     }
     else {
         button.disabled = true;
+        button.style.backgroundColor= "rgb(117, 117, 117)"
     }
 }
 
@@ -119,6 +120,17 @@ function jeu(){
     text.style.display="block";
 }
 
-function win(){
+function sent(){
+    let x = document.getElementById("send");
+    x.style.display = 'none';
+    let cube=document.getElementById("cube1");
+    cube.style.display="none";
+    let text=document.getElementById("wrapper")
+    text.style.display="none";
+    document.getElementById("FomulaireContact").reset();
+}
 
+function win(){
+    let x = document.getElementById("send");
+    x.style.display = 'block';
 }
